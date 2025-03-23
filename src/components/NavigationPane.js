@@ -2,6 +2,16 @@ import React from 'react';
 import './NavigationPane.css';
 
 const NavigationPane = () => {
+  const navLinks = [
+    { id: 'thoughts', label: 'Thoughts' },
+    { id: 'skills', label: 'Skills' },
+    { id: 'career', label: 'Career' },
+    { id: 'achievements', label: 'Key Achievements' },
+    { id: 'education', label: 'Education' },
+    { id: 'publications', label: 'Publications' },
+    { id: 'contact', label: 'Contact' }
+  ];
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -12,24 +22,11 @@ const NavigationPane = () => {
   return (
     <nav className="navigation-pane">
       <ul>
-        <li onClick={() => scrollToSection('thoughts')}>
-          <span className="nav-item">Thoughts</span>
-        </li>
-        <li onClick={() => scrollToSection('skills')}>
-          <span className="nav-item">Skills</span>
-        </li>
-        <li onClick={() => scrollToSection('career')}>
-          <span className="nav-item">Career Journey</span>
-        </li>
-        <li onClick={() => scrollToSection('education')}>
-          <span className="nav-item">Education</span>
-        </li>
-        <li onClick={() => scrollToSection('publications')}>
-          <span className="nav-item">Publications</span>
-        </li>
-        <li onClick={() => scrollToSection('contact')}>
-          <span className="nav-item">Contact</span>
-        </li>
+        {navLinks.map((link) => (
+          <li key={link.id} onClick={() => scrollToSection(link.id)}>
+            <span className="nav-item">{link.label}</span>
+          </li>
+        ))}
       </ul>
     </nav>
   );

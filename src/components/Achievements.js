@@ -4,10 +4,10 @@ import './Achievements.css';
 const Achievements = () => {
   const achievements = [
     {
-      title: "Spotlight Award Winner",
+      title: "Amazon Spotlight Award Winner",
       count: "4 times",
       period: "2021-2024",
-      description: "Recognized for outstanding performance and contributions"
+      description: "Acknowledged for exceptional performance and significant contributions in the org at Amazon."
     },
     {
       title: "ACM ICPC Regionalist",
