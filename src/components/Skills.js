@@ -2,39 +2,119 @@ import React from 'react';
 import './Skills.css';
 
 const Skills = () => {
-  const skills = [
-    {
-      category: 'Frontend',
-      items: ['React', 'JavaScript', 'HTML5', 'CSS3', 'TypeScript']
+  const skills = {
+    'Frontend Development': {
+      'Languages': [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'TypeScript'
+      ],
+      'Frameworks': [
+        'Knockout.js'
+      ]
     },
-    {
-      category: 'Backend',
-      items: ['Node.js', 'Python', 'Java', 'SQL', 'MongoDB']
+    'Backend Development': {
+      'Languages': [
+        'Java'
+      ],
+      'Technologies': [
+        'RESTful APIs',
+        'RPC',
+        'Microservices',
+        'WebSockets'
+      ]
     },
-    {
-      category: 'Tools & Others',
-      items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile']
-    }
-  ];
+    'Database': {
+      'SQL': [
+        'MySQL',
+        'PostgreSQL',
+      ],
+      'NoSQL': [
+        'Redis',
+        'DynamoDB',
+        'Cassandra',
+        'Redshift'
+      ]
+    },
+    'AWS': {
+      'Compute': [
+        'EC2',
+        'Lambda',
+        'ECS',
+        'Fargate'
+      ],
+      'Storage': [
+        'S3',
+        'Redshift',
+        'RDS'
+      ],
+      'Networking': [
+        'VPC',
+        'Route 53',
+        'API Gateway'
+      ],
+      'Security': [
+        'IAM',
+      ],
+      'Monitoring': [
+        'CloudWatch',
+        'X-Ray',
+        'CloudTrail'
+      ]
+    },
+    'DSA': {
+      'Programming Sites': [
+        <a href="https://codeforces.com/profile/bibhudhendra" target="_blank" rel="noopener noreferrer">Codeforces</a>,
+        <a href="https://www.codechef.com/users/bibhudhendra" target="_blank" rel="noopener noreferrer">CodeChef</a>,
+        <a href="https://leetcode.com/u/bibhudhendra/" target="_blank" rel="noopener noreferrer">LeetCode</a>,
+        <a href="https://www.hackerrank.com/profile/bibhudhendra" target="_blank" rel="noopener noreferrer">HackerRank</a>,
+        <a href="https://www.geeksforgeeks.org/user/bibhudhendra/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>,
+      ]
+    },
+    'DevOps & Tools': [
+      'Git',
+      'Docker',
+      'Kubernetes',
+      'Jenkins',
+      'CI/CD',
+      'AWS'
+    ],
+  };
 
   return (
-    <section className="skills-section">
-      <h2>Key Skills</h2>
+    <div className="skills-container">
+      <h2>Skills</h2>
       <div className="skills-grid">
-        {skills.map((skillGroup, index) => (
-          <div key={index} className="skill-category">
-            <h3>{skillGroup.category}</h3>
-            <div className="skill-items">
-              {skillGroup.items.map((skill, skillIndex) => (
-                <div key={skillIndex} className="skill-item">
-                  {skill}
-                </div>
-              ))}
-            </div>
+        {Object.entries(skills).map(([category, items]) => (
+          <div key={category} className={`skill-category ${category === 'AWS' ? 'aws-category' : ''}`}>
+            <h3>{category}</h3>
+            {Array.isArray(items) ? (
+              <ul>
+                {items.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+            ) : (
+              <div className="subcategories">
+                {Object.entries(items).map(([subcategory, subItems]) => (
+                  <div key={subcategory} className="subcategory">
+                    <h4>{subcategory}</h4>
+                    <ul>
+                      {subItems.map((skill) => (
+                        <li key={typeof skill === 'string' ? skill : skill.props.href}>
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
