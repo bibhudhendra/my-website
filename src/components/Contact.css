@@ -1,0 +1,89 @@
+.contact-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-content p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-email {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.copy-button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-1px);
+}
+
+.copy-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .contact-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-content p {
+    font-size: 1rem;
+  }
+
+  .contact-email {
+    font-size: 1.1rem;
+  }
+
+  .copy-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+} 

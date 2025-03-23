@@ -24,6 +24,12 @@ const NavigationPane = () => {
         <li onClick={() => scrollToSection('education')}>
           <span className="nav-item">Education</span>
         </li>
+        <li onClick={() => scrollToSection('publications')}>
+          <span className="nav-item">Publications</span>
+        </li>
+        <li onClick={() => scrollToSection('contact')}>
+          <span className="nav-item">Contact</span>
+        </li>
       </ul>
     </nav>
   );

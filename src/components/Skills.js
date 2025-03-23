@@ -41,8 +41,7 @@ const Skills = () => {
       'Compute': [
         'EC2',
         'Lambda',
-        'ECS',
-        'Fargate'
+        'ECS'
       ],
       'Storage': [
         'S3',
@@ -56,20 +55,13 @@ const Skills = () => {
       ],
       'Security': [
         'IAM',
-      ],
-      'Monitoring': [
-        'CloudWatch',
-        'X-Ray',
-        'CloudTrail'
       ]
     },
     'DSA': {
       'Programming Sites': [
         <a href="https://codeforces.com/profile/bibhudhendra" target="_blank" rel="noopener noreferrer">Codeforces</a>,
         <a href="https://www.codechef.com/users/bibhudhendra" target="_blank" rel="noopener noreferrer">CodeChef</a>,
-        <a href="https://leetcode.com/u/bibhudhendra/" target="_blank" rel="noopener noreferrer">LeetCode</a>,
-        <a href="https://www.hackerrank.com/profile/bibhudhendra" target="_blank" rel="noopener noreferrer">HackerRank</a>,
-        <a href="https://www.geeksforgeeks.org/user/bibhudhendra/" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>,
+        <a href="https://leetcode.com/u/bibhudhendra/" target="_blank" rel="noopener noreferrer">LeetCode</a>
       ]
     },
     'DevOps & Tools': [
