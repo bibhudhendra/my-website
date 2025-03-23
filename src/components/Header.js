@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
   const socialLinks = [
     { name: 'GitHub', url: 'https://github.com/bibhudhendra', icon: 'fab fa-github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/your-profile', icon: 'fab fa-linkedin' }
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/bibhu-pati-b05a0b150/', icon: 'fab fa-linkedin' }
   ];
 
   return (
