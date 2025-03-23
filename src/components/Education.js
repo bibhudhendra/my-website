@@ -12,13 +12,13 @@ const Education = () => {
     {
       year: '2014 - 2016',
       institution: 'Einstein Science College, Salipur',
-      degree: 'Science',
-      type: 'college'
+      degree: '11th & 12th Science',
+      type: 'college (Odisha Board)'
     },
     {
       year: '2011 - 2014',
       institution: 'Palei High School, Palei',
-      type: 'school'
+      type: 'school (Odisha Board)'
     },
     {
       year: '2003 - 2011',

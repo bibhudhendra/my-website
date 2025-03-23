@@ -67,13 +67,6 @@ const CareerJourney = () => {
                 </div>
               </div>
               <p>{exp.description}</p>
-              <div className="technologies">
-                {exp.technologies.map((tech, techIndex) => (
-                  <span key={techIndex} className="tech-tag">
-                    {tech}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         ))}

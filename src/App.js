@@ -15,13 +15,11 @@ function App() {
         <NavigationPane />
         <main className="main-content">
           <Header />
-          <section id="about" className="about-section">
-            <div className="about-content">
-              <h2>About Me</h2>
+          <section id="thoughts" className="thoughts-section">
+            <div className="thoughts-content">
+              <h2>Thoughts</h2>
               <p>
-                I am a passionate software engineer with expertise in building scalable web applications.
-                With a strong foundation in computer science and years of industry experience,
-                I specialize in creating efficient, maintainable, and user-friendly solutions.
+                I believe software has the power to reshape the way we live. Over the past 20-25 years, we've witnessed its transformative potential — but this is just the beginning. The exponential growth of the industry is yet to unfold.
               </p>
             </div>
           </section>

@@ -12,8 +12,8 @@ const NavigationPane = () => {
   return (
     <nav className="navigation-pane">
       <ul>
-        <li onClick={() => scrollToSection('about')}>
-          <span className="nav-item">About</span>
+        <li onClick={() => scrollToSection('thoughts')}>
+          <span className="nav-item">Thoughts</span>
         </li>
         <li onClick={() => scrollToSection('skills')}>
           <span className="nav-item">Skills</span>
