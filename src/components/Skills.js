@@ -28,7 +28,7 @@ const Skills = () => {
     'Database': {
       'SQL': [
         'MySQL',
-        'PostgreSQL',
+        'PostgreSQL'
       ],
       'NoSQL': [
         'Redis',
@@ -48,13 +48,11 @@ const Skills = () => {
         'Redshift',
         'RDS'
       ],
-      'Networking': [
+      'Others': [
         'VPC',
         'Route 53',
-        'API Gateway'
-      ],
-      'Security': [
-        'IAM',
+        'API Gateway',
+        'IAM'
       ]
     },
     'DSA': {
@@ -71,7 +69,7 @@ const Skills = () => {
       'Jenkins',
       'CI/CD',
       'AWS'
-    ],
+    ]
   };
 
   return (
@@ -79,7 +77,7 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="skills-grid">
         {Object.entries(skills).map(([category, items]) => (
-          <div key={category} className={`skill-category ${category === 'AWS' ? 'aws-category' : ''}`}>
+          <div key={category} className="skill-category">
             <h3>{category}</h3>
             {Array.isArray(items) ? (
               <ul>
@@ -92,7 +90,7 @@ const Skills = () => {
                 {Object.entries(items).map(([subcategory, subItems]) => (
                   <div key={subcategory} className="subcategory">
                     <h4>{subcategory}</h4>
-                    <ul>
+                    <ul className="skills-list">
                       {subItems.map((skill) => (
                         <li key={typeof skill === 'string' ? skill : skill.props.href}>
                           {skill}
