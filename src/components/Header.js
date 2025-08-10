@@ -1,5 +1,5 @@
 import React from 'react';
-import profileImage from '../assets/photos/bibhudh-blazer-photo.jpg';
+import profileImage from '../assets/photos/bibhudh-seattle-photo.png';
 import './Header.css';
 
 const Header = () => {
@@ -39,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header; 
+export default Header;

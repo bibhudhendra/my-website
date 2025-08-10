@@ -1,12 +1,22 @@
 import React from 'react';
 import amazonLogo from '../assets/logos/amazon-logo.png';
+import awsLogo from '../assets/logos/aws-logo.png';
 import olaLogo from '../assets/logos/olacabs-logo.png';
 import './CareerJourney.css';
 
 const CareerJourney = () => {
   const experiences = [
     {
-      year: 'Oct 2023 - Present',
+      year: 'Jul 2024 - Present',
+      title: 'Software Dev Engineer-II',
+      company: 'AWS',
+      location: 'Seattle, US',
+      description: 'Leading development of key features and mentoring junior developers.',
+      technologies: ['React', 'Node.js', 'AWS'],
+      logo: awsLogo
+    },
+    {
+      year: 'Oct 2023 - Jul 2024',
       title: 'Software Dev Engineer-II',
       company: 'Amazon',
       location: 'Hyderabad, India',
@@ -75,4 +85,4 @@ const CareerJourney = () => {
   );
 };
 
-export default CareerJourney; 
+export default CareerJourney;

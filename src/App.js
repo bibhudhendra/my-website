@@ -20,11 +20,11 @@ function App() {
           <section id="thoughts">
             <Thoughts />
           </section>
-          <section id="skills">
-            <Skills />
-          </section>
           <section id="career">
             <CareerJourney />
+          </section>
+          <section id="skills">
+            <Skills />
           </section>
           <section id="achievements">
             <Achievements />
