@@ -39,78 +39,23 @@
   font-size: 1.25rem;
   border-bottom: 2px solid #3498db;
   padding-bottom: 0.5rem;
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 0.5rem;
 }
 
-.skill-category li {
-  background-color: #f8f9fa;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: #2c3e50;
-  transition: background-color 0.3s ease;
+.skill-emoji {
+  font-size: 1.5rem;
 }
 
-.skill-category li:hover {
-  background-color: #e9ecef;
-}
-
-/* Subcategories Styles */
-.subcategories {
-  margin-top: 1rem;
-}
-
-.subcategory {
-  margin-bottom: 1rem;
-}
-
-.subcategory h4 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
+.skill-description {
+  color: #555;
   font-size: 1rem;
-}
-
-.subcategory ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0;
+  line-height: 1.5;
   margin: 0;
-  list-style: none;
+  padding-top: 0.5rem;
 }
 
-.subcategory li {
-  background-color: #f8f9fa;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: #2c3e50;
-  transition: background-color 0.3s ease;
-}
-
-.subcategory li:hover {
-  background-color: #e9ecef;
-}
-
-/* Link styles for DSA section */
-.dsa-links a {
-  color: #3498db;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.dsa-links a:hover {
-  color: #2980b9;
-  text-decoration: underline;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -136,10 +81,8 @@
     font-size: 1.1rem;
   }
 
-  .skill-category li,
-  .subcategory li {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
+  .skill-description {
+    font-size: 0.9rem;
   }
 }
 
@@ -147,4 +90,4 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
-} 
+}

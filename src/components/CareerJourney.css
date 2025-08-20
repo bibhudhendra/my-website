@@ -74,7 +74,7 @@
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .company-logo {
@@ -123,25 +123,6 @@
   color: #888;
 }
 
-.timeline-content p {
-  color: #555;
-  margin: 0 0 1rem 0;
-  line-height: 1.5;
-}
-
-.technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tech-tag {
-  background-color: #f0f0f0;
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
-  color: #555;
-}
 
 @media (max-width: 768px) {
   .timeline::before {
@@ -172,4 +153,4 @@
     width: 40px;
     height: 40px;
   }
-} 
+}

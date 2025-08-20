@@ -17,7 +17,7 @@ const Header = () => {
           </div>
           <div className="profile-info">
             <h1>Bibhu Pati</h1>
-            <p className="title">Software Dev Engineer</p>
+            <p className="title">Build Software</p>
             <div className="social-links">
               {socialLinks.map((link, index) => (
                 <a

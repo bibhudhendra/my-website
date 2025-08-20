@@ -11,8 +11,6 @@ const CareerJourney = () => {
       title: 'Software Dev Engineer-II',
       company: 'AWS',
       location: 'Seattle, US',
-      description: 'Leading development of key features and mentoring junior developers.',
-      technologies: ['React', 'Node.js', 'AWS'],
       logo: awsLogo
     },
     {
@@ -20,8 +18,6 @@ const CareerJourney = () => {
       title: 'Software Dev Engineer-II',
       company: 'Amazon',
       location: 'Hyderabad, India',
-      description: 'Leading development of key features and mentoring junior developers.',
-      technologies: ['React', 'Node.js', 'AWS'],
       logo: amazonLogo
     },
     {
@@ -29,8 +25,6 @@ const CareerJourney = () => {
       title: 'Software Dev Engineer-I',
       company: 'Amazon',
       location: 'Hyderabad, India',
-      description: 'Developed and maintained multiple web applications.',
-      technologies: ['JavaScript', 'Python', 'MongoDB'],
       logo: amazonLogo
     },
     {
@@ -38,8 +32,6 @@ const CareerJourney = () => {
       title: 'Software Dev Engineer-I',
       company: 'OlaFoods',
       location: 'Bangalore, India',
-      description: 'Started career in software development.',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
       logo: olaLogo
     },
     {
@@ -47,9 +39,7 @@ const CareerJourney = () => {
       title: 'Software Developer Intern',
       company: 'OlaCabs',
       location: 'Bangalore, India',
-      logo: olaLogo,
-      description: 'Started career in software development.',
-      technologies: ['HTML', 'CSS', 'JavaScript']
+      logo: olaLogo
     }
   ];
 
@@ -76,7 +66,6 @@ const CareerJourney = () => {
                   </div>
                 </div>
               </div>
-              <p>{exp.description}</p>
             </div>
           </div>
         ))}
