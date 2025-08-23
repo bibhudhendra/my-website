@@ -10,35 +10,28 @@ const CareerJourney = () => {
       year: 'Jul 2024 - Present',
       title: 'Software Dev Engineer-II',
       company: 'AWS',
-      location: 'Seattle, US',
+      location: 'Seattle 🇺🇸',
       logo: awsLogo
     },
     {
       year: 'Oct 2023 - Jul 2024',
       title: 'Software Dev Engineer-II',
       company: 'Amazon',
-      location: 'Hyderabad, India',
+      location: 'Hyderabad 🇮🇳',
       logo: amazonLogo
     },
     {
       year: 'Jun 2021 - Sep 2023',
       title: 'Software Dev Engineer-I',
       company: 'Amazon',
-      location: 'Hyderabad, India',
+      location: 'Hyderabad 🇮🇳',
       logo: amazonLogo
     },
     {
       year: 'Sep 2020 - Jun 2021',
       title: 'Software Dev Engineer-I',
       company: 'OlaFoods',
-      location: 'Bangalore, India',
-      logo: olaLogo
-    },
-    {
-      year: 'May 2019 - Jul 2019',
-      title: 'Software Developer Intern',
-      company: 'OlaCabs',
-      location: 'Bangalore, India',
+      location: 'Bangalore 🇮🇳',
       logo: olaLogo
     }
   ];

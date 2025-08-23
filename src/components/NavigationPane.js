@@ -4,10 +4,9 @@ import './NavigationPane.css';
 const NavigationPane = () => {
   const navLinks = [
     { id: 'thoughts', label: 'Thoughts' },
-    { id: 'career', label: 'Career' },
+    { id: 'timeline', label: 'Timeline' },
     { id: 'skills', label: 'Skills' },
     { id: 'achievements', label: 'Key Achievements' },
-    { id: 'education', label: 'Education' },
     { id: 'publications', label: 'Publications' },
     { id: 'contact', label: 'Contact' }
   ];
